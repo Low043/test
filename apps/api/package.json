@@ -1,0 +1,29 @@
+{
+  "name": "api",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "lint": "eslint",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "catalog:",
+    "@types/express": "^5.0.6",
+    "@types/node": "catalog:",
+    "eslint": "catalog:",
+    "eslint-config-prettier": "catalog:",
+    "eslint-plugin-prettier": "catalog:",
+    "globals": "catalog:",
+    "jest": "catalog:",
+    "prettier": "catalog:",
+    "tsx": "^4.22.4",
+    "typescript": "catalog:",
+    "typescript-eslint": "catalog:"
+  }
+}
