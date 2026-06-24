@@ -95,14 +95,22 @@ Exemplo: `pnpm -F api exec prisma migrate dev`.
    docker compose --env-file apps/api/.env up -d
    ```
 
-4. Inicie o servidor em modo de desenvolvimento:
+4. Configure o banco de dados:
+   Aplique as migrations existentes e gere o Prisma Client:
+
+   ```bash
+   pnpm -F api exec prisma migrate deploy
+   pnpm -F api exec prisma generate
+   ```
+
+5. Inicie o servidor em modo de desenvolvimento:
    A partir da pasta raiz:
 
    ```bash
    pnpm run dev
    ```
 
-5. Build e Start (Produção):
+6. Build e Start (Produção):
    ```bash
    pnpm -F api build
    pnpm -F api start
